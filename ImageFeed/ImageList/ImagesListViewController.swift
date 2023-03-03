@@ -1,6 +1,6 @@
 import UIKit
 
-class ImagesListViewController: UIViewController {
+final class ImagesListViewController: UIViewController {
 
     @IBOutlet private var tableView: UITableView!
     
@@ -18,7 +18,7 @@ class ImagesListViewController: UIViewController {
         tableView.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
     }
     
-    func configCell(for cell: ImagesListCell, with indexPath: IndexPath) {
+    private func configCell(for cell: ImagesListCell, with indexPath: IndexPath) {
         guard let image = UIImage(named: photosName[indexPath.row]) else {
             return
         }
@@ -30,18 +30,7 @@ class ImagesListViewController: UIViewController {
         } else {
             cell.likeButton.setImage(UIImage(named: "notLiked"), for: .normal)
         }
-        
-        let gradient = CAGradientLayer()
-        cell.gradientView.layer.cornerRadius = 20
-        let color1 = UIColor(red: 26/255, green: 27/255, blue: 34/255, alpha: 0)
-        let color2 = UIColor(red: 26/255, green: 27/255, blue: 34/255, alpha: 0.2)
-        gradient.colors = [color1.cgColor, color2.cgColor]
-        gradient.locations = [0, 1]
-        gradient.frame = CGRect(x: 0, y: 0, width: cell.frame.size.width, height: cell.gradientView.frame.size.height)
-        cell.gradientView.layer.addSublayer(gradient)
     }
-    
-    
 }
 
 extension ImagesListViewController: UITableViewDataSource {
