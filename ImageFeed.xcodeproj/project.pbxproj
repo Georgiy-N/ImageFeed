@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40CC51B29B8D9CE005C2368 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40CC51A29B8D9CE005C2368 /* UIView + ext.swift */; };
 		F42509D429B20DB600D64725 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42509D329B20DB600D64725 /* ProfileViewController.swift */; };
 		F42509DA29B21FB000D64725 /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42509D929B21FB000D64725 /* UIColor + ext.swift */; };
 		F42509DD29B21FD300D64725 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42509DC29B21FD300D64725 /* Resources.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F40CC51A29B8D9CE005C2368 /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
 		F42509D329B20DB600D64725 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F42509D929B21FB000D64725 /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		F42509DC29B21FD300D64725 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F42509D929B21FB000D64725 /* UIColor + ext.swift */,
+				F40CC51A29B8D9CE005C2368 /* UIView + ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4DB96D7299FEA0100F714E2 /* ImagesListViewController.swift in Sources */,
+				F40CC51B29B8D9CE005C2368 /* UIView + ext.swift in Sources */,
 				F4D94C5229A7919800E44B52 /* ImagesListCell.swift in Sources */,
 				F42509DD29B21FD300D64725 /* Resources.swift in Sources */,
 				F42509D429B20DB600D64725 /* ProfileViewController.swift in Sources */,

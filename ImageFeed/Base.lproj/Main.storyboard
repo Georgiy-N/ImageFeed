@@ -124,72 +124,11 @@
                     <view key="view" contentMode="scaleToFill" id="lrO-aM-BcK">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="trR-tw-BGa" userLabel="avatarImage">
-                                <rect key="frame" x="16" y="76" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="PjH-pr-0dD"/>
-                                    <constraint firstAttribute="width" constant="70" id="XeP-zo-Q89"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa8-cg-5Vj" userLabel="logOutButton">
-                                <rect key="frame" x="382" y="100" width="20" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="3HU-V9-Yfn"/>
-                                    <constraint firstAttribute="width" constant="20" id="nAk-1M-PJb"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ru-8P-Mxe" userLabel="nameLabel">
-                                <rect key="frame" x="16" y="154" width="396" height="15.666666666666657"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Никнейм" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhp-zH-Io2" userLabel="nicknameLabel">
-                                <rect key="frame" x="16" y="177.66666666666666" width="396" height="15.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zO-2N-fmO" userLabel="descriptionLabel">
-                                <rect key="frame" x="16" y="201.33333333333334" width="396" height="15.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kaF-Ve-BIF"/>
-                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="0zO-2N-fmO" firstAttribute="leading" secondItem="Yhp-zH-Io2" secondAttribute="leading" id="0LV-XJ-rQt"/>
-                            <constraint firstAttribute="trailing" secondItem="0ru-8P-Mxe" secondAttribute="trailing" constant="16" id="49x-En-IEs"/>
-                            <constraint firstAttribute="trailing" secondItem="0zO-2N-fmO" secondAttribute="trailing" constant="16" id="6qv-NA-35r"/>
-                            <constraint firstItem="0ru-8P-Mxe" firstAttribute="top" secondItem="trR-tw-BGa" secondAttribute="bottom" constant="8" id="DkQ-ao-b1J"/>
-                            <constraint firstAttribute="trailing" secondItem="fa8-cg-5Vj" secondAttribute="trailing" constant="26" id="LbM-9v-ZXn"/>
-                            <constraint firstItem="Yhp-zH-Io2" firstAttribute="top" secondItem="0ru-8P-Mxe" secondAttribute="bottom" constant="8" id="fmb-MJ-F6Y"/>
-                            <constraint firstItem="0zO-2N-fmO" firstAttribute="top" secondItem="Yhp-zH-Io2" secondAttribute="bottom" constant="8" id="gIL-8Z-bRR"/>
-                            <constraint firstItem="trR-tw-BGa" firstAttribute="leading" secondItem="lrO-aM-BcK" secondAttribute="leading" constant="16" id="jwU-2T-DuU"/>
-                            <constraint firstItem="fa8-cg-5Vj" firstAttribute="centerY" secondItem="trR-tw-BGa" secondAttribute="centerY" id="mzW-AT-rJK"/>
-                            <constraint firstItem="Yhp-zH-Io2" firstAttribute="leading" secondItem="0ru-8P-Mxe" secondAttribute="leading" id="qjx-b9-tLB"/>
-                            <constraint firstItem="0ru-8P-Mxe" firstAttribute="leading" secondItem="trR-tw-BGa" secondAttribute="leading" id="xVO-bm-5Gw"/>
-                            <constraint firstItem="trR-tw-BGa" firstAttribute="top" secondItem="lrO-aM-BcK" secondAttribute="top" constant="76" id="xxf-Wc-ogq"/>
-                            <constraint firstAttribute="trailing" secondItem="Yhp-zH-Io2" secondAttribute="trailing" constant="16" id="zXb-gM-FLG"/>
-                        </constraints>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="PF8-nw-4fZ"/>
                     <navigationItem key="navigationItem" id="mos-xR-wMa"/>
-                    <connections>
-                        <outlet property="avatarImage" destination="trR-tw-BGa" id="HhY-gE-otn"/>
-                        <outlet property="descriptionLabel" destination="0zO-2N-fmO" id="yEb-PN-APe"/>
-                        <outlet property="logOutButton" destination="fa8-cg-5Vj" id="7Rk-HO-i9v"/>
-                        <outlet property="nameLabel" destination="0ru-8P-Mxe" id="P68-ar-ory"/>
-                        <outlet property="nicknameLabel" destination="Yhp-zH-Io2" id="WRf-j3-Pzp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X73-dH-CqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -5,6 +5,8 @@ enum Res {
         static let background = UIColor(hexString: "#1A1B22")
         
         static let lableGrey = UIColor(hexString: "#AEAFB4")
+        
+        static let buttonRed = UIColor(hexString: "#F56B6C")
     }
     
     enum Images {
