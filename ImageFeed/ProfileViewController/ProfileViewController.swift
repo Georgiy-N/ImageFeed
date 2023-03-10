@@ -1,11 +1,11 @@
 import UIKit
 
 final class ProfileViewController: UIViewController {
-    private let avatarImage = UIImageView()
-    private let nameLabel = UILabel()
-    private let nicknameLabel = UILabel()
-    private let descriptionLabel = UILabel()
-    private let logOutButton = UIButton()
+    private lazy var avatarImage = UIImageView()
+    private lazy var nameLabel = UILabel()
+    private lazy var nicknameLabel = UILabel()
+    private lazy var descriptionLabel = UILabel()
+    private lazy var logOutButton = UIButton()
     
     
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ extension ProfileViewController {
         
         view.backgroundColor = Res.Colors.background
         
-        avatarImage.image = Res.Images.Profil.mockPhoto
+        avatarImage.image = Res.Images.Profile.mockPhoto
         
         nameLabel.font = UIFont.systemFont(ofSize: 21, weight: .bold)
         nameLabel.textColor = .white
@@ -36,15 +36,11 @@ extension ProfileViewController {
         descriptionLabel.textColor = .white
         descriptionLabel.text = Res.Strings.Profile.description
         
-        logOutButton.setImage(Res.Images.Profil.logOut, for: .normal)
+        logOutButton.setImage(Res.Images.Profile.logOut, for: .normal)
     }
     
     private func addViews() {
-        view.setupView(avatarImage)
-        view.setupView(nameLabel)
-        view.setupView(nicknameLabel)
-        view.setupView(descriptionLabel)
-        view.setupView(logOutButton)
+        [avatarImage, nameLabel, nicknameLabel, descriptionLabel, logOutButton].map {self.view.setupView($0)}
     }
     
     private func constraintViews() {

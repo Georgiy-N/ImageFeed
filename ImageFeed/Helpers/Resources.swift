@@ -10,7 +10,7 @@ enum Res {
     }
     
     enum Images {
-        enum Profil {
+        enum Profile {
             static let defaultAvatar = UIImage(named: "avatar")
             static let logOut = UIImage(named: "logout")
             static let mockPhoto = UIImage(named: "photo_ekaterina")
